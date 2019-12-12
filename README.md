@@ -34,7 +34,7 @@ total_memory_size_mib: 32768
 - total amount of RAM used by K8s cluster (min of 32GiB, or a multiple of 32GiB for every 10 vCPUs ie 30 vCPUs = 3 x 32 GiB RAM).
 
 total_capacity_gib: 5120
-- totale capacity of objectstore in GiB.
+- total capacity of objectstore in GiB.
 
 domain_name: objects.nutanix.com
 - required domainname.

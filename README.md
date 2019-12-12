@@ -1,7 +1,7 @@
 # calm-bp-objects
 Create an S3 compliant Object Store via REST calls
 
-Required input variables :
+# Required input variables :
 
 objectstore_name: smartstore
 - name of objectstore.

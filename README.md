@@ -1,6 +1,14 @@
 # calm-bp-objects
 Create an S3 compliant Object Store via REST calls
 
+Download Nutanix Calm blueprint (.json) in order to run blueprint in Nutanix Prism Central hosted Calm service.
+On upload to Calm service all previous blueprint credentials are invalidated
+Create new private/public key pair
+Populate blueprint credentials (with private key) and application profile variables (with public key string)
+
+Github has an excellent guide on generating SSH keys: https://help.github.com/articles/generating-ssh-keys
+
+
 # Required input variables
 
 - objectstore_name: smartstore

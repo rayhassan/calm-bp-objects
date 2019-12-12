@@ -1,41 +1,51 @@
 # calm-bp-objects
 Create an S3 compliant Object Store via REST calls
 
-# Required input variables :
+# Required input variables
 
-objectstore_name: smartstore
-- name of objectstore.
+- objectstore_name: smartstore
 
-infra_network: vlan.56
-- name of infrastructure network, used to obtain network UUID reference.
+name of objectstore.
 
-client_network: vlan.64
-- name of client network, used to obtain network UUID reference.
+- infra_network: vlan.56
 
-cluster_name: SAFC
-- underlying cluster infrastructure on which object store will be deployed, used to obtain cluster UUID reference.
+name of infrastructure network, used to obtain network UUID reference.
 
-infra_network_dns: 10.68.59.251
-- DNS used for infrastructure network.
+- client_network: vlan.64
 
-infra_network_vip: 10.68.59.252
-- VIP used to communictae across infrastructure network.
+name of client network, used to obtain network UUID reference.
 
-access_network_ip1: 10.68.64.251
-access_network_ip1: 10.68.64.252
-access_network_ip1: 10.68.64.253
-access_network_ip1: 10.68.64.254
-- 4 IP addresses required for access network (don't have to be consecutive).
+- cluster_name: SAFC
 
-vcpu_count: 10
-- Total number of vCPUs used by K8s cluster (minimum of 10 or a multiple of 10).
+underlying cluster infrastructure on which object store will be deployed, used to obtain cluster UUID reference.
 
-total_memory_size_mib: 32768
-- total amount of RAM used by K8s cluster (min of 32GiB, or a multiple of 32GiB for every 10 vCPUs ie 30 vCPUs = 3 x 32 GiB RAM).
+- infra_network_dns: 10.68.59.251
 
-total_capacity_gib: 5120
-- total capacity of objectstore in GiB.
+DNS used for infrastructure network.
 
-domain_name: objects.nutanix.com
-- required domainname.
+- infra_network_vip: 10.68.59.252
 
+VIP used to communicate across infrastructure network.
+
+- access_network_ip1: 10.68.64.251
+- access_network_ip1: 10.68.64.252
+- access_network_ip1: 10.68.64.253
+- access_network_ip1: 10.68.64.254
+
+4 IP addresses required for access network (don't have to be consecutive).
+
+- vcpu_count: 10
+
+Total number of vCPUs used by K8s cluster (minimum of 10 or a multiple of 10).
+
+- total_memory_size_mib: 32768
+
+total amount of RAM used by K8s cluster (min of 32GiB, or a multiple of 32GiB for every 10 vCPUs ie 30 vCPUs = 3 x 32 GiB RAM).
+
+- total_capacity_gib: 5120
+
+total capacity of objectstore in GiB.
+
+- domain_name: objects.nutanix.com
+
+required domain name.

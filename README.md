@@ -6,7 +6,20 @@ Create an S3 compliant Object Store via REST calls
 - Populate blueprint credentials with your Prism Central user name and password.
 
 ## WIP ...DELETE /objectstores/{UUID} ...WIP
+## GET /objectstore/list
+Print status / list all objectstores. Returns edited response for each objectstore (see below)
+
 ## GET /objectstores/{UUID}
+
+Print status of objectstore defined by UUID. Returns edited response :
+
+Objectstore current status
+--------------------------
+name		smartstore\
+UUID		ee937940-b5f6-44ef-6169-21e1986db900\
+state		PENDING\
+%age completed:	5
+
 ## POST /objectstores
 
 # Required input variables
